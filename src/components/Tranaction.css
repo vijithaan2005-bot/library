@@ -1,0 +1,759 @@
+.transaction-page {
+
+    min-height: 100vh;
+
+    background: #f0fdf4;
+
+    padding: 40px;
+
+    font-family: Arial, sans-serif;
+
+    box-sizing: border-box;
+
+}
+
+
+
+.transaction-header {
+
+    max-width: 1150px;
+
+    margin: 0 auto 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.transaction-title {
+
+    margin: 0;
+
+    color: #14532d;
+
+    font-size: 32px;
+
+}
+
+.transaction-subtitle {
+
+    color: #64748b;
+
+    margin-top: 8px;
+
+}
+
+
+.transaction-count-box {
+
+    background: #166534;
+
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 15px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-width: 120px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(22, 101, 52, 0.2);
+
+}
+
+.transaction-count-number {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+.transaction-count-text {
+
+    font-size: 13px;
+
+}
+
+
+.transaction-success {
+
+    max-width: 1150px;
+
+    margin: 0 auto 20px;
+
+    padding: 14px 18px;
+
+    border-radius: 10px;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    border: 1px solid #86efac;
+
+}
+
+.transaction-error {
+
+    max-width: 1150px;
+
+    margin: 0 auto 20px;
+
+    padding: 14px 18px;
+
+    border-radius: 10px;
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    border: 1px solid #fca5a5;
+
+}
+
+
+.issue-card {
+
+    max-width: 1150px;
+
+    margin: 0 auto 30px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+
+}
+
+.section-title {
+
+    margin: 0;
+
+    color: #14532d;
+
+    font-size: 21px;
+
+}
+
+.description {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+
+}
+
+
+
+.transaction-form {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    align-items: end;
+
+    margin-top: 20px;
+
+}
+
+.input-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+.input-label {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #334155;
+
+}
+
+.transaction-input {
+
+    padding: 12px;
+
+    border:
+        1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+}
+
+.transaction-input:focus {
+
+    border-color: #166534;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(22, 101, 52, 0.1);
+
+}
+
+
+.issue-button {
+
+    padding: 12px 20px;
+
+    background: #166534;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    height: 43px;
+
+    transition:
+        all 0.3s ease;
+
+}
+
+.issue-button:hover {
+
+    background: #14532d;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(22, 101, 52, 0.25);
+
+}
+
+
+
+.table-card {
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+
+}
+
+.table-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.transaction-badge {
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+.transaction-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1000px;
+
+}
+
+.transaction-table th {
+
+    background: #166534;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+}
+
+.transaction-table td {
+
+    padding: 15px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    color: #334155;
+
+    vertical-align: middle;
+
+}
+
+.transaction-table tbody tr {
+
+    background: white;
+
+    transition:
+        background 0.2s ease;
+
+}
+
+.transaction-table tbody tr:hover {
+
+    background: #f0fdf4;
+
+}
+
+
+
+.overdue-row {
+
+    background: #fff7f7 !important;
+
+}
+
+.overdue-row:hover {
+
+    background: #fef2f2 !important;
+
+}
+
+
+.transaction-number {
+
+    display: inline-flex;
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+}
+
+
+.due-date {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    font-weight: 600;
+
+}
+
+.overdue-date {
+
+    color: #dc2626;
+
+}
+
+.overdue-warning {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    padding: 4px 8px;
+
+    border-radius: 12px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+.status-issued {
+
+    display: inline-block;
+
+    background: #fef3c7;
+
+    color: #92400e;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+.status-returned {
+
+    display: inline-block;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+.status-overdue {
+
+    display: inline-block;
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.return-button {
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    border:
+        1px solid #86efac;
+
+    padding: 8px 13px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition:
+        all 0.3s ease;
+
+}
+
+.return-button:hover {
+
+    background: #166534;
+
+    color: white;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 5px 12px
+        rgba(22, 101, 52, 0.2);
+
+}
+
+
+
+.undo-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+
+}
+
+
+
+.undo-button {
+
+    background: #fff7ed;
+
+    color: #c2410c;
+
+    border:
+        1px solid #fdba74;
+
+    padding: 8px 13px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition:
+        all 0.3s ease;
+
+}
+
+.undo-button:hover {
+
+    background: #ea580c;
+
+    color: white;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 5px 12px
+        rgba(234, 88, 12, 0.2);
+
+}
+
+
+
+.undo-timer {
+
+    background: #fff7ed;
+
+    color: #c2410c;
+
+    padding: 4px 8px;
+
+    border-radius: 10px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+
+.undo-expired {
+
+    display: inline-block;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+
+.transaction-empty {
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: #64748b;
+
+}
+
+.empty-icon {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+.backButton {
+
+    position: fixed;
+
+    right: 30px;
+
+    bottom: 30px;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    background: #166534;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 20px
+        rgba(0, 0, 0, 0.2);
+
+    transition:
+        all 0.3s ease;
+
+}
+
+.backButton:hover {
+
+    background: #14532d;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.25);
+
+}
+
+
+@media (max-width: 800px) {
+
+    .transaction-page {
+
+        padding: 20px;
+
+    }
+
+    .transaction-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+    .transaction-form {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .transaction-count-box {
+
+        align-self: stretch;
+
+    }
+
+    .backButton {
+
+        right: 15px;
+
+        bottom: 15px;
+
+        padding: 11px 15px;
+
+        font-size: 13px;
+
+    }
+
+}

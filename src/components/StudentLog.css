@@ -1,0 +1,476 @@
+* {
+    box-sizing: border-box;
+}
+
+.student-login-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    background: #f0fdf4;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.student-login-left {
+    width: 45%;
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #064e3b,
+        #047857,
+        #10b981
+    );
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.student-login-left::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    top: -120px;
+    left: -120px;
+}
+
+.student-login-left::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    bottom: -100px;
+    right: -80px;
+}
+
+
+.student-login-icon {
+    width: 110px;
+
+    height: 110px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border: 2px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 55px;
+
+    margin-bottom: 25px;
+
+    z-index: 1;
+}
+
+
+.student-login-left h1 {
+    font-size: 40px;
+
+    margin: 0 0 15px;
+
+    z-index: 1;
+}
+
+
+.student-login-left p {
+    max-width: 420px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    opacity: 0.9;
+
+    z-index: 1;
+}
+
+.login-books {
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 40px;
+
+    z-index: 1;
+}
+
+.login-books span {
+    font-size: 45px;
+
+    transition: 0.3s;
+}
+
+.login-books span:hover {
+    transform: translateY(-10px) rotate(-5deg);
+}
+
+
+.student-login-right {
+    width: 55%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+}
+
+
+.student-login-card {
+    width: 100%;
+
+    max-width: 450px;
+
+    background: white;
+
+    padding: 42px;
+
+    border-radius: 22px;
+
+    border: 1px solid #d1fae5;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+
+.student-login-header {
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+
+.login-small-icon {
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 16px;
+
+    background: #d1fae5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: auto;
+
+    font-size: 30px;
+}
+
+
+.student-login-header h2 {
+    color: #064e3b;
+
+    font-size: 28px;
+
+    margin: 18px 0 8px;
+}
+
+
+.student-login-header p {
+    color: #6b7280;
+
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+.student-login-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 21px;
+}
+
+
+.student-input-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.student-input-group label {
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.student-input-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+.student-input-group input:focus {
+    border-color: #10b981;
+
+    box-shadow:
+        0 0 0 3px rgba(16, 185, 129, 0.12);
+}
+
+
+.student-input-group input::placeholder {
+    color: #9ca3af;
+}
+
+
+
+.student-login-btn {
+    margin-top: 5px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #047857,
+        #10b981
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.student-login-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(5, 150, 105, 0.3);
+}
+
+
+.student-success {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: #ecfdf5;
+
+    color: #047857;
+
+    border: 1px solid #a7f3d0;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+.student-error {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+    border: 1px solid #fecaca;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+
+.student-register-link {
+    margin-top: 27px;
+
+    text-align: center;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.student-register-link button {
+    border: none;
+
+    background: transparent;
+
+    color: #047857;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-left: 5px;
+
+    font-size: 14px;
+}
+
+
+.student-register-link button:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 800px) {
+
+    .student-login-page {
+        flex-direction: column;
+    }
+
+    .student-login-left {
+        width: 100%;
+
+        min-height: 300px;
+
+        padding: 35px 20px;
+    }
+
+    .student-login-left h1 {
+        font-size: 30px;
+    }
+
+    .student-login-left p {
+        font-size: 14px;
+    }
+
+    .student-login-icon {
+        width: 80px;
+        height: 80px;
+
+        font-size: 40px;
+    }
+
+    .login-books {
+        margin-top: 20px;
+    }
+
+    .login-books span {
+        font-size: 30px;
+    }
+
+    .student-login-right {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 25px 15px;
+    }
+
+    .student-login-card {
+        padding: 30px 22px;
+    }
+}
+.back-home-btn {
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #166534;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background: #14532d;
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}

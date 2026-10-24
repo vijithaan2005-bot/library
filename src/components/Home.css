@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+.home {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #f0fdf4,
+        #dcfce7,
+        #ecfdf5
+    );
+
+    color: #14532d;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.circle-one {
+    width: 400px;
+    height: 400px;
+
+    background: #86efac;
+
+    top: -180px;
+    right: -100px;
+}
+
+.circle-two {
+    width: 300px;
+    height: 300px;
+
+    background: #bbf7d0;
+
+    bottom: -130px;
+    left: -100px;
+}
+
+
+
+.hero {
+    flex: 1;
+
+    padding: 50px 7% 30px;
+
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.book-icon {
+    
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.small-title {
+    margin-top: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #16a34a;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 70px);
+
+    line-height: 1.05;
+
+    margin: 15px 0;
+
+    color: #14532d;
+
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #16a34a;
+}
+
+.description {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #4b5563;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+
+.choice-container {
+    max-width: 850px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.choice-card {
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px rgba(20, 83, 45, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+.choice-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(20, 83, 45, 0.18);
+
+    border-color: #4ade80;
+}
+
+
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+}
+
+.admin-card .card-icon {
+    background: #dcfce7;
+}
+
+.student-card .card-icon {
+    background: #d1fae5;
+}
+
+
+.choice-card h2 {
+    margin: 18px 0 8px;
+
+    color: #14532d;
+
+    font-size: 25px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.choice-card p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    min-height: 45px;
+}
+
+
+
+.choice-card button {
+    margin-top: 18px;
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #166534;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.choice-card button:hover {
+    background: #15803d;
+}
+
+.choice-card button span {
+    margin-left: 8px;
+
+    font-size: 18px;
+}
+
+
+
+footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border-top: 1px solid #bbf7d0;
+
+    color: #166534;
+
+    position: relative;
+    z-index: 2;
+}
+
+footer p {
+    margin: 0 0 5px;
+
+    font-weight: 600;
+}
+
+footer span {
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .home-header {
+        padding: 0 20px;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .choice-container {
+        grid-template-columns: 1fr;
+
+        margin-top: 35px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .choice-card {
+        padding: 25px;
+    }
+}
